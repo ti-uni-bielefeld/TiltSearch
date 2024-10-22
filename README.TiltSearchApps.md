@@ -36,8 +36,8 @@ a single image from a panoramic image database printing the result to the
 standard output:
 
 ```shell
-# Usage: IdealScale root filename
-$ IdealScale data/lab/d 000000
+# Usage: build/src/IdealScale root filename
+$ build/src/IdealScale data/lab/d 000000
 9.85177  170.664
 ```
 
@@ -48,8 +48,8 @@ dataset.
 idealscale is a script which determines the minimum of pixel- and postscale over an entire database for different database variants:
 
 ```shell
-# Usage: idealscale database variants
-$ idealscale data/lab "n d"
+# Usage: scripts/idealscale.sh database variants
+$ scripts/idealscale.sh data/lab "n d"
 6.80378 170.664
 ```
 
@@ -63,8 +63,8 @@ exist) and printing time measurements of the tilt correction (and the input
 image descriptor) to the standard output:
 
 ```shell
-# Usage: Tilt root filename output_root solution [interpolation=NEAREST]
-$ Tilt data/lab/d 000000 out 0 0
+# Usage: build/src/Tilt root filename output_root solution [interpolation=NEAREST]
+$ build/src/Tilt data/lab/d 000000 out 0 0
 000000 0 0 0.087266 -0.087266 0 7856 # Last number is runtime in microseconds
 ```
 
@@ -86,8 +86,8 @@ tilt correction related parameters) are set via environment variables. The
 results are written to the standard output:
 
 ```shell
-# Usage: BaselineDemo ss_root ss cv_root cv [rotate-ss] [rotate-cv] [no-tilt]
-$ BaselineDemo data/lab/d 000000 data/lab/d 001000
+# Usage: build/src/BaselineDemo ss_root ss cv_root cv [rotate-ss] [rotate-cv] [no-tilt]
+$ build/src/BaselineDemo data/lab/d 000000 data/lab/d 001000
 000000 ... 001000 ... 0.05236 0.087266 0.0981748 0 40246 1 19671 22155 
 # EST:   beta=3.043418, alpha=0.098175, psi=0.000000
 # TRUE:  beta=3.141593, alpha=0.000000, psi=0.000000
@@ -128,8 +128,8 @@ parameters) are set via environment variables. The results are written to the
 standard output:
 
 ```shell
-# Usage: TiltSearchDemo ss_root ss cv_root cv [rotate-ss] [rotate-cv]
-$ TiltSearchDemo data/lab/d 000000 data/lab/d 001000
+# Usage: build/src/TiltSearchDemo ss_root ss cv_root cv [rotate-ss] [rotate-cv]
+$ build/src/TiltSearchDemo data/lab/d 000000 data/lab/d 001000
 000000 ... 001000 ... 0.02 0.14 0.147262 0.0490874 39136 225 16275 4166000 
 # EST:   beta=3.043418, alpha=0.147262, psi=0.049087
 # TRUE:  beta=3.141593, alpha=0.000000, psi=0.000000
@@ -149,8 +149,8 @@ The `TiltSearchDemo` application provides the additional option to produce a log
 of the search process by setting the `logging` environment variable:
 
 ```shell
-# Usage: TiltSearchDemo ss_root ss cv_root cv [rotate-ss] [rotate-cv]
-$ search_strategy=1 logging=1 TiltSearchDemo data/lab/d 000000 data/lab/d 001000
+# Usage: build/src/TiltSearchDemo ss_root ss cv_root cv [rotate-ss] [rotate-cv]
+$ search_strategy=1 logging=1 build/src/TiltSearchDemo data/lab/d 000000 data/lab/d 001000
 000000 ... 001000 ... 0.035 0.105 0.0981748 0 39374 17 16592 320189 
 > 0 0  0 0 41162 0.14 0.14  
 > 0 0  0 0 41162 0.07 0.07  
@@ -213,8 +213,8 @@ To run a tilt search and directly produce a plot visualizing the search process,
 run the `searchplot` wrapper script:
 
 ```shell
-# Usage: ./searchplot plot-file ss_root ss cv_root cv [rotate-ss] [rotate-cv]
-$ search_strategy=1 searchplot pattern.svg data/lab/d 000000 data/lab/d 001000
+# Usage: scripts/searchplot.sh plot-file ss_root ss cv_root cv [rotate-ss] [rotate-cv]
+$ search_strategy=1 scripts/searchplot.sh pattern.svg data/lab/d 000000 data/lab/d 001000
 ```
 
 Instead of printing the `TiltSearchDemo` results, this script filters the
@@ -228,8 +228,8 @@ it in verbose mode (with the environment variable `verbose` set to `1`), e.g.
 the `BaselineDemo`:
 
 ```shell
-# Usage: BaselineDemo ss_root ss cv_root cv [rotate-ss] [rotate-cv] [no-tilt]
-verbose=1 BaselineDemo data/lab/d 000000 data/lab/d 001000
+# Usage: build/src/BaselineDemo ss_root ss cv_root cv [rotate-ss] [rotate-cv] [no-tilt]
+verbose=1 build/src/BaselineDemo data/lab/d 000000 data/lab/d 001000
 # verbose = 1 (0) 
 # dump_default = 1 (1) 
 # nAlpha = 128 (128) 

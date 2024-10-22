@@ -46,7 +46,7 @@ for variant in $variants; do
   for name in $names; do
     # Compute the ideal scale parameter of this image
     #   NOTE: Use sed to remove lines starting with # (verbose output)
-    scales=$(IdealScale "$database/$variant" "$name" | sed '/^#/d');
+    scales=$(build/src/IdealScale "$database/$variant" "$name" | sed '/^#/d');
     # Turn scales into array
     # shellcheck disable=SC2206
     scales=( $scales );

@@ -30,7 +30,7 @@ if [[ -z "$search_strategy" ]]; then
 fi
 
 # Run the demo program with logging of the search process and collect results
-results="$(logging=1 TiltSearchDemo "${@:2}")"
+results="$(logging=1 build/src/TiltSearchDemo "${@:2}")"
 # If the execution of the search tool failed
 # shellcheck disable=SC2181
 if [[ $? -ne 0 ]]; then
@@ -61,7 +61,7 @@ case $search_strategy in
   # Extra logfile for background required
   background=$(mktemp)
   # Run grid search with logging to produce the background
-  results="$(search_strategy=0 logging=1 TiltSearchDemo "${@:2}")"
+  results="$(search_strategy=0 logging=1 build/src/TiltSearchDemo "${@:2}")"
   # Extract the search log from output
   echo "$results" | sed '/^[>]/!d' | sed 's/>//g' >"$background"
   # Plot the pattern search on top of the background
@@ -72,7 +72,7 @@ case $search_strategy in
   # Extra logfile for background required
   background=$(mktemp)
   # Run grid search with logging to produce the background
-  results="$(search_strategy=0 logging=1 TiltSearchDemo "${@:2}")"
+  results="$(search_strategy=0 logging=1 build/src/TiltSearchDemo "${@:2}")"
   # Extract the search log from output
   echo "$results" | sed '/^[>]/!d' | sed 's/>//g' >"$background"
   # Plot the simplex search on top of the background
