@@ -32,11 +32,11 @@
 #include "Angle.H"
 
 // SIMD Image type
-#include "SIMDImage.H"
+#include <warpingsimd/SIMDImage.H>
 // Functions operating on SIMDImages
-#include "SIMDImageFunctions.H"
+#include <warpingsimd/SIMDImageFunctions.H>
 // Execution time measurement via struct timespec
-#include "TimeMeasurement.H"
+#include <warpingsimd/TimeMeasurement.H>
 
 // Tilt correction solutions and image transformations
 #include "TiltCorrection.H"

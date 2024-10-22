@@ -39,11 +39,11 @@
 #include <fstream>
 
 // SIMD library Exception class
-#include "SIMDException.H"
+#include <warpingsimd/SIMDException.H>
 // SIMD Image type and Panorama addon
-#include "SIMDImage.H"
+#include <warpingsimd/SIMDImage.H>
 // Functions operating on SIMDImage (e.g. loadPGM, rotateHor)
-#include "SIMDImageFunctions.H"
+#include <warpingsimd/SIMDImageFunctions.H>
 
 // Strong type angular units
 #include "Angle.H"

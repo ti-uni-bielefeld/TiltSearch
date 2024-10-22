@@ -32,9 +32,9 @@
 #include "Angle.H"
 
 // SIMD Image type
-#include "SIMDImage.H"
+#include <warpingsimd/SIMDImage.H>
 // Functions operating on SIMDImages
-#include "SIMDImageFunctions.H"
+#include <warpingsimd/SIMDImageFunctions.H>
 
 // Environment variable configuration options
 #include "Env.H"

@@ -38,7 +38,7 @@
 #include "Angle.H"
 
 // Homogenous transformations
-#include "TransformMatrix.H"
+#include <warpingsimd/TransformMatrix.H>
 
 // Panoramic image tilt types and functions namespace
 namespace simd::tilt {}

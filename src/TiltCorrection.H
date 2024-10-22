@@ -43,11 +43,11 @@
 #include "TiltModel.H"
 
 // SIMD typedefs and TypeInfo
-#include "SIMDTypes.H"
+#include <tsimd.H>
 // SIMD Image type
-#include "SIMDImage.H"
+#include <warpingsimd/SIMDImage.H>
 // Functions operating on SIMDImages
-#include "SIMDImageFunctions.H"
+#include <warpingsimd/SIMDImageFunctions.H>
 
 // Panoramic image tilt types and functions namespace
 namespace simd::tilt {}
