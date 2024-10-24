@@ -252,3 +252,5 @@ This library makes extensive use of C++14 and C++17 features (return type
 deduction, class template argument deduction, structured bindings, fold
 expression, ...), thus at least `gcc 7` or `clang 5` are required to build
 applications including from this library with `-std=c++17` set.
+
+
