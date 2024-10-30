@@ -6,6 +6,16 @@ See [README.TiltSearchApps.md](README.TiltSearchApps.md) for information about t
 
 For further information on **TiltSearch**, including related papers, videos, and image databases see https://www.ti.uni-bielefeld.de/html/people/moeller/tsimd_warpingsimd.html.
 
+## Dependencies
+
+**TiltSearch** depends on the [**WarpingSIMD**](https://github.com/ti-uni-bielefeld/WarpingSIMD) and [**T-SIMD**](https://github.com/ti-uni-bielefeld/T-SIMD) libraries.
+
+## Download and Usage
+
+Download the latest release of **TiltSearch** from the [TiltSearch GitHub releases page](https://github.com/ti-uni-bielefeld/TiltSearch/releases).
+
+See [README.TiltSearchApps.md](README.TiltSearchApps.md) for information about the **TiltSearch** applications and [README.TiltSearchLib.md](README.TiltSearchLib.md) for information about the **TiltSearch** library.
+
 ## License
 
 This software is distributed based on a specific **license agreement**, please see the file [LICENSE.md](LICENSE.md).
