@@ -45,12 +45,8 @@
 
 // SIMD typedefs and TypeInfo
 #include <tsimd.H>
-// SIMD Image type
-#include <warpingsimd/SIMDImage.H>
-// Functions operating on SIMDImages
-#include <warpingsimd/SIMDImageFunctions.H>
-// Bundle of entire warping/min-warping functionality
-#include <warpingsimd/WarpingBundle.H>
+
+#include <WarpingSIMD.H>
 
 // Panoramic image tilt types and functions namespace
 namespace simd::tilt {}

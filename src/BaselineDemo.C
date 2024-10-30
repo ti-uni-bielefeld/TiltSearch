@@ -31,12 +31,7 @@
 // Strong type angular units
 #include "Angle.H"
 
-// SIMD Image type
-#include <warpingsimd/SIMDImage.H>
-// Functions operating on SIMDImages
-#include <warpingsimd/SIMDImageFunctions.H>
-// Bundle of entire warping/min-warping functionality
-#include <warpingsimd/WarpingBundle.H>
+#include <WarpingSIMD.H>
 
 // Tilt correction solutions and image transformations
 #include "TiltCorrection.H"

@@ -31,12 +31,7 @@
 // Strong type angular units
 #include "Angle.H"
 
-// SIMD Image type
-#include <warpingsimd/SIMDImage.H>
-// Functions operating on SIMDImages
-#include <warpingsimd/SIMDImageFunctions.H>
-// Execution time measurement via struct timespec
-#include <warpingsimd/TimeMeasurement.H>
+#include <WarpingSIMD.H>
 
 // Tilt correction solutions and image transformations
 #include "TiltCorrection.H"

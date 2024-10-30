@@ -38,12 +38,7 @@
 // C++ file stream input/output
 #include <fstream>
 
-// SIMD library Exception class
-#include <warpingsimd/SIMDException.H>
-// SIMD Image type and Panorama addon
-#include <warpingsimd/SIMDImage.H>
-// Functions operating on SIMDImage (e.g. loadPGM, rotateHor)
-#include <warpingsimd/SIMDImageFunctions.H>
+#include <WarpingSIMD.H>
 
 // Strong type angular units
 #include "Angle.H"

@@ -31,10 +31,7 @@
 // Strong type angular units
 #include "Angle.H"
 
-// SIMD Image type
-#include <warpingsimd/SIMDImage.H>
-// Functions operating on SIMDImages
-#include <warpingsimd/SIMDImageFunctions.H>
+#include <WarpingSIMD.H>
 
 // Environment variable configuration options
 #include "Env.H"

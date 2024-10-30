@@ -30,8 +30,7 @@
 // All SIMD vectors and corresponding definitions
 // SIMD typedefs and TypeInfo
 #include <tsimd.H>
-// Bundle of entire warping/min-warping functionality
-#include <warpingsimd/WarpingBundle.H>
+#include <WarpingSIMD.H>
 
 // Select width and alignment of SIMD vectors (and images)
 inline constexpr int SW = NATIVE_SIMD_WIDTH;
@@ -58,8 +57,7 @@ using WarpingBundle = ns_simd::WarpingBundle<
 
 // Standard C++ time strong types (e.g. microseconds)
 #include <chrono>
-// Execution time measurement via struct timespec
-#include <warpingsimd/TimeMeasurement.H>
+#include <WarpingSIMD.H>
 
 // Augments Type with time and count measuring the calls of the run method
 template <class Type>

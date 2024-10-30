@@ -37,8 +37,7 @@
 // Strong type angular units
 #include "Angle.H"
 
-// Homogenous transformations
-#include <warpingsimd/TransformMatrix.H>
+#include <WarpingSIMD.H>
 
 // Panoramic image tilt types and functions namespace
 namespace simd::tilt {}
