@@ -119,6 +119,8 @@ flags_cppstd  ?= $(userdefs_cppstd)
 flags_cpp      = $(flags_c) $(userdefs_cpp) $(flags_cppstd) $(crt_sec_features_flags)
 flags_arch    ?= $(userdefs_arch)
 flags_depends  = -MMD -MP
+# change -I./external to point to the T-SIMD and WarpingSIMD libraries for developing TiltSearch in parallel with the WarpingSIMD and T-SIMD libraries
+# see README_CONTRIBUTORS_AND_MAINTAINERS.md for more information
 flags_includes = -I./external
 
 # os dependent definitions

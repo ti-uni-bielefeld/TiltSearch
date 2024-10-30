@@ -16,6 +16,10 @@ Download the latest release of **TiltSearch** from the [TiltSearch GitHub releas
 
 See [README.TiltSearchApps.md](README.TiltSearchApps.md) for information about the **TiltSearch** applications and [README.TiltSearchLib.md](README.TiltSearchLib.md) for information about the **TiltSearch** library.
 
+## Contributing and Maintaining
+
+For notes on contributing to and maintaining **TiltSearch**, see [README_CONTRIBUTORS_AND_MAINTAINERS.md](README_CONTRIBUTORS_AND_MAINTAINERS.md).
+
 ## License
 
 This software is distributed based on a specific **license agreement**, please see the file [LICENSE.md](LICENSE.md).
